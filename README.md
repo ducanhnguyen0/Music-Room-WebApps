@@ -1,7 +1,7 @@
 # Music Room Web Application
 
 Harvard CS50 Web Project\
-Video Demo: https://youtu.be/5jyuGM0gclc
+Video Demo: https://youtu.be/NBIMxUR8SwE
 
 ## Description:
 A fullstack django-react music web application integrating with Spotify API where users can become a DJ to host an online party or just simply listen to music with friends at the same time. Users can join others rooms to listen to their playlists or they can create their own room to play their own music to not only friends but others as well. The Music Room web application creates a new fun exciting experience for users by letting them discover the world of music of different people where they can enjoy a song that they might never heard about it or sharing the same emotion, mood through the song in the room hosted by others.
@@ -31,34 +31,34 @@ Unlike other project in the course where we simply using django to handle logic 
 ### api
 The app resposible for handling backend of the web app. In the api app, there are multiple main files:
 
-* models.py
+* models.py:
 Models of the backend storing room and song
 
-* serializers.py
+* serializers.py:
 Serializer for API View to transform data type
 
-* urls.py
+* urls.py:
 Paths of the backend API
 
-* views.py
+* views.py:
 API View logic in backend server contains several functions handle request to get room, join room, create room, update room, my room, my playlist.
 
 ### frontend
 The app resposible for handling frontend of the web app. In the frontend app, there are multiple main folder, files:
 
-* src
+* src:
 JavaScript files which handle the UI of the web app page
 
-* static
+* static:
 Storing css style files and main javacript files
 
-* templates
+* templates:
 HTML layout of the web app
 
-* urls.py
+* urls.py:
 Paths of all pages in web app for routing
 
-* views.py
+* views.py:
 Render the html page
 
 *Other folders and files contains dependencies from node modules
@@ -66,19 +66,19 @@ Render the html page
 ### spotify
 The app resposible for handling Spotify API. In the spotify app, there are multiple main files:
 
-* models.py
+* models.py:
 Models for storing tokens of spotify and votes
 
-* credentials.py
+* credentials.py:
 Storing credetials of app to Spotify API
 
-* urls.py
+* urls.py:
 Paths of the backend API
 
-* utils.py
+* utils.py:
 Helper function to handle tokens and request from Spotify API
 
-* views.py
+* views.py:
 API View Logic in backend server contains several functions handle spotify api authentication, authorization, request.
 
 
@@ -106,4 +106,6 @@ pip install -r requirements.txt
 ### Run Django Web Server
 
 1. cd to music (main app)
-2. run command: python manage.py runserver
+2. run command: python manage.py makemigrations
+3. then run command: python manage.py migrate
+4. then run command: python manage.py runserver
