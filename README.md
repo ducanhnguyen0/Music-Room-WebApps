@@ -94,8 +94,19 @@ pip install -r requirements.txt
 ### Install Node Modules
 
 1. cd frontend
-2. run command: npm i (You might need to add --legacy-peer-deps or --force since the dependencies are old versions)
-3. compile: npm run build (npm run dev for development)
+2. run command:
+   ```
+   npm i
+   ```
+   (You might need to add --legacy-peer-deps or --force since the dependencies are old versions)
+3. compile:
+   ```
+   npm run build
+   ```
+   For development:
+   ```
+   npm run dev
+   ```
 
 ### Register Spotify account and Create App in Development Dashboard
 
@@ -105,7 +116,16 @@ pip install -r requirements.txt
 
 ### Run Django Web Server
 
-1. cd to music (main app)
-2. run command: python manage.py makemigrations
-3. then run command: python manage.py migrate
-4. then run command: python manage.py runserver
+1. change directory to main app:
+   ```
+   cd music
+   ```
+2. Initialize the database:
+   ```
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+3. Run the app locally:
+   ```
+   python manage.py runserver
+   ```
