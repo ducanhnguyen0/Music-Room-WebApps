@@ -93,13 +93,16 @@ pip install -r requirements.txt
 
 ### Install Node Modules
 
-1. cd frontend
-2. run command:
+1. Change directory to frontend app
+   ```
+   cd frontend
+   ```
+2. Install node dependencies:
    ```
    npm i
    ```
-   (You might need to add --legacy-peer-deps or --force since the dependencies are old versions)
-3. compile:
+   (You might need to add ```--legacy-peer-deps``` or ```--force``` since the dependencies are old versions)
+3. Compile:
    ```
    npm run build
    ```
@@ -116,7 +119,7 @@ pip install -r requirements.txt
 
 ### Run Django Web Server
 
-1. change directory to main app:
+1. Change directory to main app:
    ```
    cd music
    ```
