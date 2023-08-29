@@ -86,9 +86,9 @@ API View Logic in backend server contains several functions handle spotify api a
 ## How to run
 
 ### Install Python packages
-
+```
 pip install -r requirements.txt
-
+```
 ### [Install Node.js](https://nodejs.org)
 
 ### Install Node Modules
@@ -114,7 +114,7 @@ pip install -r requirements.txt
 ### Register Spotify account and Create App in Development Dashboard
 
 1. URI: (your local host)/redirect
-2. Get the Client ID, Client Secret and replace that in credentials.py file inside spotify app
+2. Get the Client ID, Client Secret and replace that in credentials.py file inside spotify app\
 *Note: You need Spotify Premium to use play, pause, skip features inside web app(You can still play, pause, skip in spotify and web app acts the same)
 
 ### Run Django Web Server
